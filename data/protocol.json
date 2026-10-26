@@ -1,0 +1,36 @@
+{
+  "protocol_name": "Pre-Operative Antibiotic",
+  "status": "Active",
+  "compliance": 80,
+  "current_step": 4,
+  "current_step_name": "Administer Cefazolin 2 g IV",
+  "remaining_time": "10 minutes",
+
+  "steps": [
+    {
+      "step": 1,
+      "title": "Patient Admission",
+      "status": "Completed"
+    },
+    {
+      "step": 2,
+      "title": "Consent Signed",
+      "status": "Completed"
+    },
+    {
+      "step": 3,
+      "title": "CBC Completed",
+      "status": "Completed"
+    },
+    {
+      "step": 4,
+      "title": "Administer Antibiotic",
+      "status": "Completed"
+    },
+    {
+      "step": 5,
+      "title": "Patient Ready for Surgery",
+      "status": "Completed"
+    }
+  ]
+}

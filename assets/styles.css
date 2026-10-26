@@ -1,0 +1,760 @@
+/* ===================================================
+   Clinical Decision Support UI
+   Header Style
+=================================================== */
+
+/* ===== Background ===== */
+
+.main{
+
+    background:#F8FAFC;
+
+}
+
+/* ===== Header ===== */
+
+.header{
+
+    background:#FFFFFF;
+
+    border:0.5px solid #E6EDF5;
+
+    border: radius 5px;
+
+    padding:7px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 4px 12px rgba(15,23,42,.05);
+
+}
+
+
+/* ===== Title ===== */
+
+.header-title{
+
+    text-align:center;
+
+}
+
+.header-title h2{
+
+    margin:0;
+
+    color:#1E5AA8;
+
+    font-size:40px;
+
+    font-weight:700;
+
+}
+
+.header-title p{
+
+    margin-top:5px;
+
+    color:#64748B;
+
+    font-size:25px;
+
+}
+
+/* ===== Divider ===== */
+
+hr{
+
+    border:none;
+
+    border-top:3px solid #474b4e;
+
+    margin:10px 0;
+
+}
+
+/* ===================================================
+   Patient Cards
+=================================================== */
+
+.info-box{
+
+    background:#FFFFFF;
+
+    border:1px solid #E8EEF6;
+
+    border-radius:14px;
+
+    padding:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    min-height:84px;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.05);
+
+    transition:all .25s ease;
+
+}
+
+.info-box:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(15,23,42,.08);
+
+}
+
+/* ===== Icon Circle ===== */
+
+.icon-circle{
+
+    width:48px;
+
+    height:48px;
+
+    min-width:48px;
+
+    border-radius:50%;
+
+    background:#EEF5FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ===== Bootstrap Icon ===== */
+
+.icon-circle i{
+
+    color:#1976D2;
+
+    font-size:22px;
+
+}
+
+/* ===== Text ===== */
+
+.info-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.info-label{
+
+    color:#1976D2;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    margin-bottom:5px;
+
+}
+
+.info-value{
+
+    color:#1F2937;
+
+    font-size:17px;
+
+    font-weight:700;
+
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width:900px){
+
+.info-box{
+
+    min-height:72px;
+
+}
+
+.icon-circle{
+
+    width:40px;
+
+    height:40px;
+
+    min-width:40px;
+
+}
+
+.icon-circle i{
+
+    font-size:18px;
+
+}
+
+.info-value{
+
+    font-size:15px;
+
+}
+
+}
+
+.protocol-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E8EEF6;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 4px 12px rgba(15,23,42,.05);
+
+    min-height:360px;
+
+}
+
+.protocol-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#1E5AA8;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:28px;
+
+}
+
+.protocol-label{
+
+    color:#94A3B8;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+}
+
+.protocol-value{
+
+    color:#1F2937;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    margin-top:6px;
+
+}
+
+.status-active{
+
+    color:#16A34A;
+
+}
+
+/* ===============================
+   Compliance
+================================ */
+
+.protocol-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:35px;
+
+    margin-top:18px;
+
+}
+
+.protocol-col{
+
+    flex:1;
+
+}
+
+.progress-container{
+
+    width:100%;
+
+    height:10px;
+
+    background:#E5E7EB;
+
+    border-radius:10px;
+
+    margin-top:8px;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    height:100%;
+
+    background:#2563EB;
+
+    border-radius:10px;
+
+}
+
+.compliance-value{
+
+    color:#16A34A;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-top:4px;
+
+}
+
+.protocol-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:28px;
+
+    margin-top:10px;
+
+}
+
+.protocol-bottom{
+
+    margin-top:25px;
+
+    border-top:1px solid #EEF2F7;
+
+    padding-top:18px;
+
+}
+
+/* ================= Protocol Card ================= */
+
+
+
+.protocol-card{
+    background:#ffffff;
+    border:1px solid #e9eef5;
+    border-radius:16px;
+    padding:24px;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+    margin-top:10px;
+}
+
+.protocol-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:26px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:24px;
+}
+
+.protocol-dot{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#22C55E;
+}
+
+/* ===== Status + Timer ===== */
+
+.protocol-status-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    margin-top:34px;
+    margin-bottom:34px;
+}
+
+.protocol-status-item,
+.protocol-timer-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-width:170px;
+    text-align:center;
+}
+
+.status-badge-large{
+    display:inline-block;
+    padding:11px 26px;
+    border-radius:999px;
+    font-size:18px;
+    font-weight:700;
+}
+
+.status-caption{
+    margin-top:8px;
+    font-size:12px;
+    color:#94A3B8;
+    font-weight:500;
+}
+
+.timer-active{
+    font-size:42px;
+    font-weight:800;
+    line-height:1;
+    letter-spacing:1px;
+}
+
+.timer-inactive{
+    font-size:38px;
+    line-height:1;
+}
+
+.timer-completed{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#DCFCE7;
+    color:#16A34A !important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    font-weight:800;
+}
+
+.timer-label{
+    margin-top:8px;
+    font-size:13px;
+    color:#94A3B8;
+    font-weight:500;
+}
+
+
+/* ===== Labels ===== */
+
+.protocol-label{
+    font-size:13px;
+    color:#6b7280;
+    margin-bottom:6px;
+}
+
+.protocol-value{
+    font-size:20px;
+    font-weight:700;
+    color:#111827;
+}
+
+
+/* ===== Compliance ===== */
+
+.compliance-section{
+    margin-top:4px;
+}
+
+.compliance-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:22px;
+}
+
+.compliance-percent{
+    font-size:16px;
+    font-weight:700;
+    color:#2563EB;
+}
+
+.progress-bg{
+    width:100%;
+    height:10px;
+    background:#EDF2F7;
+    border-radius:999px;
+    overflow:hidden;
+    margin-top:8px;
+}
+
+.progress-fill{
+    height:100%;
+    background:#2F80ED;
+    border-radius:999px;
+}
+
+/* ================= Reminder Card ================= */
+
+.reminder-card{
+    background:#ffffff;
+    border:1px solid #e9eef5;
+    border-radius:16px;
+    padding:22px;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+    min-height:340px;
+}
+
+.reminder-title{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:22px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:25px;
+}
+
+.reminder-item{
+    margin-bottom:20px;
+}
+
+.reminder-label{
+    color:#6b7280;
+    font-size:13px;
+    margin-bottom:6px;
+}
+
+.reminder-value{
+    color:#1f2937;
+    font-size:18px;
+    font-weight:600;
+}
+
+.priority-high{
+    display:inline-block;
+    background:#FEE2E2;
+    color:#DC2626;
+    padding:6px 14px;
+    border-radius:20px;
+    font-weight:600;
+}
+
+.remaining-red{
+    color:#DC2626;
+    font-size:18px;
+    font-weight:700;
+}
+
+/* ================= Timeline ================= */
+
+.timeline-card{
+    background:#ffffff;
+    border:1px solid #e9eef5;
+    border-radius:16px;
+    padding:24px;
+    margin-top:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.timeline-title{
+    font-size:22px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:30px;
+}
+
+.timeline-horizontal{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    position:relative;
+}
+
+.timeline-step-box{
+    flex:1;
+    position:relative;
+    text-align:center;
+}
+
+.timeline-circle{
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto;
+    color:white;
+    font-weight:700;
+    font-size:14px;
+    position:relative;
+    z-index:2;
+}
+
+.timeline-connector{
+    position:absolute;
+    top:13px;
+    left:55%;
+    width:90%;
+    height:3px;
+    background:#dbe4ee;
+    z-index:1;
+}
+
+.completed{
+    background:#22c55e;
+}
+
+.current{
+    background:#2F80ED;
+    animation:pulse 1.5s infinite;
+}
+
+.pending{
+    background:#D1D5DB;
+}
+
+.timeline-step-title{
+    margin-top:12px;
+    font-size:15px;
+    font-weight:600;
+    color:#1f2937;
+    line-height:1.4;
+    min-height:42px;
+}
+
+
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+box-shadow:0 0 0 0 rgba(47,128,237,.45);
+}
+
+70%{
+transform:scale(1.12);
+box-shadow:0 0 0 10px rgba(47,128,237,0);
+}
+
+100%{
+transform:scale(1);
+box-shadow:0 0 0 0 rgba(47,128,237,0);
+}
+
+}
+/* ================= AI Assessment ================= */
+
+.ai-card{
+    background:#ffffff;
+    border:1px solid #E6EEF8;
+    border-radius:18px;
+    padding:22px;
+    margin-top:20px;
+    box-shadow:0 8px 24px rgba(15,23,42,.05);
+}
+
+.ai-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.ai-title{
+    font-size:22px;
+    font-weight:700;
+    color:#1F2937;
+}
+
+.ai-badge{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#8ee68e;
+    color:#0f972e;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+}
+
+.ai-live{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#0c8237;
+    animation:livePulse 1.5s infinite;
+}
+
+.ai-bubble{
+    background:#fafcf8;
+    border:1px solid #E5E7EB;
+    border-radius:14px;
+    padding:16px;
+    margin-bottom:14px;
+    transition:.25s;
+}
+
+.ai-bubble:hover{
+    border-color:#bfe1fe;
+    background:#F3F8FF;
+}
+
+.ai-heading{
+    font-size:15px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.ai-text{
+    font-size:14px;
+    color:#4B5563;
+    line-height:1.7;
+}
+
+@keyframes livePulse{
+
+0%{
+opacity:1;
+transform:scale(1);
+}
+
+50%{
+opacity:.4;
+transform:scale(1.35);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+.protocol-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:18px 0 28px;
+}
+
+.timer-box{
+    font-size:24px;
+    font-weight:700;
+    color:#2563EB;
+}
+
+.current-step-box{
+    margin-top:22px;
+    padding-top:18px;
+    border-top:1px solid #E5E7EB;
+}
